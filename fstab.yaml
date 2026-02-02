@@ -2,3 +2,7 @@ mountpoints:
   /:
     url: https://drive.google.com/drive/u/0/folders/1Wm_0632VGsGbKHFBVWk5gPv9cMNp4GqF
     type: markupss
+
+redirects:
+  source: /redirects.json
+  handler: edge
