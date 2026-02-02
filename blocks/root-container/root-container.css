@@ -1,0 +1,197 @@
+Section spacing */
+.section.root-container-container {
+  padding: 40px 20px;
+  background: #f5f5f5; /* page background */
+}
+
+/* Card container */
+.root-container.block {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #00c6c6, #00a8c5);
+  border-radius: 18px;
+  padding: 50px 60px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+/* Main layout: two columns */
+.root-container.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT SIDE (Text Area) */
+.root-container.block > div:first-child {
+  flex: 0 0 60%;
+}
+
+/* RIGHT SIDE (Image Area) */
+.root-container.block > div:last-child {
+  flex: 0 0 40%;
+  text-align: right;
+}
+
+/* Headline */
+.root-container.block h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Subtext */
+.root-container.block h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+/* Buttons container inline */
+.button-container {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+/* Primary button */
+.button-container .button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  background: #ffcc00;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* Secondary button style (second button) */
+.button-container + .button-container .button {
+  background: white;
+  color: #000;
+}
+
+/* Hover effects */
+.button-container .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling
+.root-container.block picture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Section spacing */
+.section.root-container-container {
+  padding: 60px 20px;
+  background: #efefef;
+}
+
+/* Main promo card */
+.root-container.block {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(135deg, #00c6c6, #00a8c5);
+  border-radius: 24px;
+  padding: 60px 70px;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Subtle texture overlay */
+.root-container.block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Layout row */
+.root-container.block > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* LEFT CONTENT */
+.root-container.block > div > div:first-child {
+  flex: 0 0 60%;
+}
+
+/* RIGHT IMAGE */
+.root-container.block > div > div:last-child {
+  flex: 0 0 40%;
+  text-align: right;
+}
+
+/* Headline */
+.root-container h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* Subtext */
+.root-container h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  opacity: 0.9;
+}
+
+/* Buttons side by side */
+.button-wrapper {
+  margin-top: 10px;
+}
+
+.button-wrapper .button {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 12px;
+  transition: all 0.25s ease;
+}
+
+/* Primary button */
+.button-wrapper .button:first-child {
+  background: #ffcc00;
+  color: #000;
+}
+
+/* Secondary button */
+.button-wrapper .button:last-child {
+  background: #ffffff;
+  color: #000;
+}
+
+/* Button hover */
+.button-wrapper .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.root-container picture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Slight card tilt illusion */
+.root-container.block {
+  transform: perspective(1400px) rotateX(2deg);
+}

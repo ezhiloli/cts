@@ -1,0 +1,79 @@
+.infy-header-wrapper {
+  width: 100%;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.infy-header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.infy-header > div {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 2rem;
+}
+
+.infy-header > div:first-child {
+  /* Desktop header */
+  display: none;
+}
+
+.infy-header > div:last-child {
+  /* Mobile header */
+  display: flex;
+  justify-content: space-between;
+}
+
+.infy-header .header-logo {
+  flex-shrink: 0;
+}
+
+.infy-header .header-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.infy-header .nav-item {
+  padding: 0;
+}
+
+.infy-header .nav-item p {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.infy-header .nav-item p:hover {
+  color: #0099cc;
+}
+
+.infy-header .nav-toggle {
+  cursor: pointer;
+}
+
+.infy-header .nav-toggle img {
+  height: 24px;
+  width: 24px;
+}
+
+
+  .infy-header > div:first-child {
+    display: flex;
+  }
+  
+  .infy-header > div:last-child {
+    display: none;
+  }
+  
+  .infy-header > div > div:first-child {
+    /* Empty cell */
+    display: none;
+  }
